@@ -1,0 +1,1 @@
+kernel function rbf baska kernelleri kullan
