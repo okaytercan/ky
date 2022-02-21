@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 # data loading
-veriler = pd.read_csv('customers.csv')
+data = pd.read_csv('customers.csv')
 
-X = veriler.iloc[:,3:].values
+X = data.iloc[:,3:].values
 
 # clustering model
 kmeans = KMeans ( n_clusters = 3, init = 'k-means++')
