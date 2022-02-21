@@ -6,9 +6,9 @@ from sklearn.cluster import AgglomerativeClustering
 import scipy.cluster.hierarchy as sch
 
 # data loading
-veriler = pd.read_csv('customers.csv')
+data = pd.read_csv('customers.csv')
 
-X = veriler.iloc[:,3:].values
+X = data.iloc[:,3:].values
 
 # clustering model
 kmeans = KMeans ( n_clusters = 3, init = 'k-means++')
